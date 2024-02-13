@@ -18,8 +18,8 @@ sd-2/main/stable-diffusion-2-inpainting:
    recommended: False
 sdxl/main/stable-diffusion-xl-base-1-0:
    description: Stable Diffusion XL base model (12 GB)
-   repo_id: stabilityai/stable-diffusion-xl-base-1.0
-   recommended: False
+   repo_id: stablediffusionapi/pony-diffusion-v6-xl
+   recommended: True
 sdxl-refiner/main/stable-diffusion-xl-refiner-1-0:
    description: Stable Diffusion XL refiner model (12 GB)
    repo_id: stabilityai/stable-diffusion-xl-refiner-1.0
@@ -126,10 +126,10 @@ sdxl/t2i_adapter/zoedepth-sdxl:
    recommended: False
 sdxl/t2i_adapter/lineart-sdxl:
    repo_id: TencentARC/t2i-adapter-lineart-sdxl-1.0
-   recommended: False
-sdxl/t2i_adapter/sketch-sdxl:
-   repo_id: TencentARC/t2i-adapter-sketch-sdxl-1.0
-   recommended: False
+   recommended: True
+sdxl/t2i_adapter/openpose-sdxl:
+   repo_id: TencentARC/t2i-adapter-openpose-sdxl-1.0
+   recommended: True
 sd-1/embedding/EasyNegative:
    path: https://huggingface.co/embed/EasyNegative/resolve/main/EasyNegative.safetensors
    recommended: False
@@ -158,8 +158,8 @@ sd-1/ip_adapter/ip_adapter_plus_face_sd15:
       - InvokeAI/ip_adapter_sd_image_encoder
    description: Refined IP-Adapter for SD 1.5 models, adapted for faces
 sdxl/ip_adapter/ip_adapter_sdxl:
-   repo_id: InvokeAI/ip_adapter_sdxl
-   recommended: False
+   repo_id: InvokeAI/ip-adapter-plus-face_sdxl_vit-h
+   recommended: True
    requires:
       - InvokeAI/ip_adapter_sdxl_image_encoder
    description: IP-Adapter for SDXL models
@@ -169,5 +169,5 @@ any/clip_vision/ip_adapter_sd_image_encoder:
    description: Required model for using IP-Adapters with SD-1/2 models
 any/clip_vision/ip_adapter_sdxl_image_encoder:
    repo_id: InvokeAI/ip_adapter_sdxl_image_encoder
-   recommended: False
+   recommended: True
    description: Required model for using IP-Adapters with SDXL models
