@@ -165,7 +165,7 @@ sdxl/ip_adapter/ip_adapter_sdxl:
    description: IP-Adapter for SDXL models
 any/clip_vision/ip_adapter_sd_image_encoder:
    repo_id: InvokeAI/ip_adapter_sd_image_encoder
-   recommended: False
+   recommended: True
    description: Required model for using IP-Adapters with SD-1/2 models
 any/clip_vision/ip_adapter_sdxl_image_encoder:
    repo_id: InvokeAI/ip_adapter_sdxl_image_encoder
