@@ -124,11 +124,11 @@ sdxl/t2i_adapter/canny-sdxl:
 sdxl/t2i_adapter/zoedepth-sdxl:
    repo_id: TencentARC/t2i-adapter-depth-zoe-sdxl-1.0
    recommended: False
-sdxl/t2i_adapter/lineart-sdxl:
-   repo_id: TencentARC/t2i-adapter-lineart-sdxl-1.0
+sdxl/controlnet/canny-sdxl:
+   repo_id: diffusers/controlnet-canny-sdxl-1.0
    recommended: True
-sdxl/t2i_adapter/openpose-sdxl:
-   repo_id: TencentARC/t2i-adapter-openpose-sdxl-1.0
+sdxl/controlnet/openpose-sdxl:
+   repo_id: thibaud/controlnet-openpose-sdxl-1.0
    recommended: True
 sd-1/embedding/EasyNegative:
    path: https://huggingface.co/embed/EasyNegative/resolve/main/EasyNegative.safetensors
@@ -159,15 +159,15 @@ sd-1/ip_adapter/ip_adapter_plus_face_sd15:
    description: Refined IP-Adapter for SD 1.5 models, adapted for faces
 sdxl/ip_adapter/ip_adapter_sdxl:
    repo_id: InvokeAI/ip-adapter-plus-face_sdxl_vit-h
-   recommended: True
+   recommended: False
    requires:
       - InvokeAI/ip_adapter_sdxl_image_encoder
    description: IP-Adapter for SDXL models
 any/clip_vision/ip_adapter_sd_image_encoder:
    repo_id: InvokeAI/ip_adapter_sd_image_encoder
-   recommended: True
+   recommended: False
    description: Required model for using IP-Adapters with SD-1/2 models
 any/clip_vision/ip_adapter_sdxl_image_encoder:
    repo_id: InvokeAI/ip_adapter_sdxl_image_encoder
-   recommended: True
+   recommended: False
    description: Required model for using IP-Adapters with SDXL models
