@@ -126,10 +126,10 @@ sdxl/t2i_adapter/zoedepth-sdxl:
    recommended: False
 sdxl/controlnet/canny-sdxl:
    repo_id: diffusers/controlnet-canny-sdxl-1.0
-   recommended: True
+   recommended: False
 sdxl/controlnet/openpose-sdxl:
    repo_id: thibaud/controlnet-openpose-sdxl-1.0
-   recommended: True
+   recommended: False
 sd-1/embedding/EasyNegative:
    path: https://huggingface.co/embed/EasyNegative/resolve/main/EasyNegative.safetensors
    recommended: False
